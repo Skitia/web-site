@@ -1,0 +1,44 @@
+Next Steps: 
+
+Minor Details to Adjust:
+
+
+
+Post Release:
+1: Switch to PDO constructs so we can do param queries. 
+Improve SEO on the technical side. 
+Consider making Audio player with javascript over html
+
+BG2 Stuff 
+
+Emily
+Unique Ability: Celestial Blessing: (+1 Fire/Cold/Acid/Electrical) on top of normal arrow, 20 arrows, but expires at end of duration. 
+Unique Item: Emily's Circlet: +1 Saves, protection from confusion.
+Unique HLA: Enhanced Celestial Blessing (Given for free at start of ToB), +2 to arrow damage on a +2 arrow, 20 arrows, expires at end of duration.
+Quest Related Change: Can recognize the need for order in life and become lawful good, or can shift to chaotic good.
+Quest Related Reward: Becomes the elected heir or not, which splits her epilogue into 4 possibilities. 
+Helga
+Unique Ability: Fury (+2 Strength, +4 Movement, +2 saves versus spell), Becomes Drained at conclusion. No Mind Immunities. 
+Unique Item: None 
+Unique HLA: Greater Fury: No Drain at end of spell. (Free at start of ToB)
+Quest Related Change:  Helga will resolve to truly, finally settle after the events, or continue to fight to the end of her days.
+Quest Related Reward: Helm 
+Kale
+Unique Ability: None 
+Unique Item: Kale's Cloak (+12 Hitpoints)
+Unique HLA: Epic Last Stand (Improves upon Last Stand, Cannot be dropped below 1 Hitpoint for 10 seconds, Heals 40 hitpoints at end, can only be taken once)
+Quest Related Change: Kale can shift to TN if the PC eases him into less of a free spirit. 
+Quest Related Reward: Halberd (ToB Reward, +5?)
+Recorder
+Unique Ability: Call Gustav 
+Unique Item: Gustav, Lantan Flute (Zone of Free Air) 
+Unique HLA: Enhanced Sonata (Replaced Sonata)
+Quest Related Change:
+Quest Related Reward: Greater Deafness Scroll 
+Vienxay
+Unique Ability: SoD Spell, Drains 1% of Current Health. Lost if she becomes TN Shadowdancer only. 
+Unique Item: None 
+Unique HLA: None 
+Quest Related Change: Vienxay remains as is, empowered by the artifact (+1 to Strength, Con, Int) while the blessing for turning it in will yield (+1 Dex, +1 Cha, +1 Wis)
+Quest Related Reward: Vienxay can change her class. 
+

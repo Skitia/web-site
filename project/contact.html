@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Skitia's Stories</title>
+  <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative|Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+<style>
+  </style>
+</head>
+<body>
+  <div id="header-container"></div>
+<div id = contactBackground>
+    
+
+
+        
+
+  <form method="post" id = "centerContact">
+                 
+ <h1 id = "contactHead">
+   Contact
+  </h1> 
+        <p id = "contactText">
+    Please enter the details below.
+  </p>
+<br>
+<label for = "full-name">Full Name</label>
+<br><input type = "text" class = "contactInput" placeholder = "Name (Required)" required name = "Name" id = "full-name"> <br>        
+
+<label for = "email">Email</label>
+ <br> <input type = "email" class = "contactInput" placeholder = "Email (Required)" required pattern="[^@\s]+@[^@\s]+" name = "Email" id = "email"> <br>
+
+  <label for = "subject">Subject</label>
+<br> <input type = "text" class = "contactInput" placeholder = "Subject (Required)" required name = "Subject" id = "subject"><br>
+<label for = "message">Message</label>
+<br><textarea placeholder="Message (Required)" name="Message" id = "contactMessage"  rows="5" cols="33" required minlength=20 id = "message"></textarea>
+<br>
+  <input type = "submit" value = "Submit" id = "contactSubmit" name = "contactSubmit"></input>
+  </form>
+</div>
+<div id="footer-container"></div>
+</body>
+<script src="js/main.js"></script>
+
+</html>

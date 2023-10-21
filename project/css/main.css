@@ -1,0 +1,558 @@
+html, body, div, span, applet, object, iframe,
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+	
+
+  
+}
+.audio-container{
+  text-align:center;
+  margin:0 auto;
+  display:flex;
+}
+.voice-container
+{
+  flex:50%;
+  margin-left:15%;
+}
+.music-container
+{
+  flex:50%;
+  margin-right:15%;
+}
+body,html{
+   font-family: 'Cinzel Decorative', cursive;
+   
+}
+#mod-details-container
+{
+  margin-left:200px;
+  width:500px;
+  display:flex;
+}
+#mods-container{
+  background-image: url('../img/modback.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  padding-bottom: 1px !important;
+  padding-top: 1px !important;
+}
+#mods-container h1,h2
+{
+  text-align:center;
+  margin:0 auto;
+  color:gold;
+} 
+
+.slide-container
+{
+  display:flex;
+  justify-content: center; 
+  flex-direction: column;
+}
+.image-container
+{
+  margin:0 auto;
+  width:200px;
+  position:relative;
+}
+.image-container-solo
+{
+  margin:0 auto;
+  width:200px;
+  position:relative;
+}
+.top-text
+{
+  position:absolute;
+  color:gold;
+  text-align:center;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  width: 100%;
+  font-family: 'Cinzel Decorative', cursive;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 210px;
+  height: 98%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0,0,0,0.1),rgba(0, 0, 0,0.75));
+  border:2px ridge aliceblue;
+}
+
+.bot-text
+{
+  position:absolute; 
+  bottom:0px;
+  left:50%;
+  color:gold;
+  transform: translateX(-50%);
+  font-size: 20px;
+  text-align:center;
+  width: 100%;
+  font-family: 'Cinzel Decorative', cursive;
+}
+.mod-info
+{
+    padding: 16px 64px;
+    font-size: 18px;
+    white-space: pre-wrap;
+}
+.mod-action
+{
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+  flex-direction: column;
+}
+
+.chart-container
+{
+  width:100%;
+  margin-top:20px;
+  border-top:1px solid aliceblue;
+  background-color:#25255e;
+  color:aliceblue;
+}
+.chart-container h2
+{
+  margin-top:15px;
+  margin-bottom:-15px;
+}
+.text-container
+{
+  width:100%;
+  padding-left:1px;
+  background-color:#25255e;
+  color:aliceblue;
+  border-top:4px ridge aliceblue;
+}
+.text-container pre
+{
+  padding-top:20px;
+  text-indent:2em;
+  padding-left:3%;
+  padding-right:3%;
+}
+.text-container h2
+{
+  margin-top:20px;
+  margin-bottom:0px;
+}
+.quick-button {
+  background-color: #000040;
+  border: 1px solid aliceblue;
+  border-radius: 25px;
+  color: #F0F8FF;
+  width: 220px;
+
+  height: 75px;
+  cursor: pointer;
+  font-size: 22px;
+  font-family: 'Cinzel Decorative', cursive;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+}
+.quick-button:hover{
+  color:gold;
+  border-color:gold;
+  text-decoration:underline;
+}
+.quick-button:disabled
+{
+  background-color:grey;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+} 
+.dots
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 10px 10px;
+  background-color: silver;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.mod-chart
+{
+  display:flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.active, .dot:hover {
+  background-color: gold;
+}
+
+#homePicture {
+    /* Set the background image here */
+    background-image: url('../img/Hero.jpg');
+
+
+    /* Add any additional CSS properties for positioning, size, etc. */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Set the initial height for the hero image section */
+    display:flex;
+    flex-direction:column-reverse;
+    border-bottom:1px solid aliceblue;
+  }
+  
+  #homeText {
+
+    /* Add styles for the text and other elements within the hero section */
+    text-align: center;
+    
+    
+    color: gold;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    background-color: rgba(21, 66, 92, 0.8);
+    
+  }
+  
+  #homeButton {
+    cursor: pointer;
+    width: 200px;
+    height: 30px;
+    font-size: 24px;
+    margin-bottom:10px;
+    color: gold;
+    -webkit-appearance: none;
+    border-color: gold;
+    border-style: solid;
+    border-width: 1px;
+    background-color: navy;
+}
+#homeButton:hover
+{
+  color:silver;
+  border-color:silver;
+  text-decoration:underline;
+  cursor:pointer;
+}
+#homeDetailsContainer{
+    background-color:#25255e;
+    color:gold;
+    padding:1px 0px;
+}
+#homeDetailsContainer h1{
+    text-align:center;
+}
+#homeDetailsContainer p
+{
+    margin:5% 10%;
+    color:aliceblue;
+}
+#homeDetailsContainer ul
+{
+    color:aliceblue;
+}
+#homeDetailsContainer ul li
+{
+    margin:10px 0px;
+}
+.nonmobile-img
+{
+    display:none;
+}
+.detail-images{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+#aboutHead
+{
+  text-align:center;
+  color:gold;
+}
+
+#right-about p{
+    text-indent: 1em; 
+}
+
+
+
+#aboutBackground{
+  background-image: url("../img/about.jpg");
+background-repeat: no-repeat;
+background-size:cover;
+padding-top:1px;
+
+background-attachment: fixed;
+}
+#contactBackground{
+  background-image: url("../img/Hero.png"), linear-gradient(Aliceblue,skyblue,lightblue,Aliceblue);
+background-repeat: no-repeat, repeat;
+background-position: 1000px -250px; 
+padding-bottom:50px;
+padding-top:50px;
+
+background-attachment: fixed;
+}
+#centerContact {
+padding-top:20px;
+position:static;
+margin: 0px auto;
+width:50%;
+max-width:500px;
+min-width:325px;
+text-align: center;
+color:gold;
+background-color:navy;
+border: 2px solid gold;
+}
+
+
+#contactSubmit 
+{ 
+margin-top:20px;
+width: 55%; 
+color:  gold; 
+background-color: #000040;
+border: solid 2px gold;
+border-radius:25px;
+box-sizing: border-box;
+cursor: pointer;
+margin-bottom: 50px;
+height: 60px;
+font-size: 200%;
+-webkit-appearance:none;
+
+}
+#contactSubmit:hover{
+color:silver;
+text-decoration:underline;
+border-color:silver;
+}
+
+
+.contactInput {
+color:navy;
+width: 55%;
+height: 25px;
+margin-top:15px;
+margin-bottom:15px;
+text-align:left;
+border:2px solid gold;
+border-radius: 5px;
+}
+.contactInput:focus {
+background-color: #D79752;
+border-color:silver;
+}
+#contactMessage{
+margin-top:20px;
+width: 55%;
+resize: none;
+border:2px solid gold;
+border-radius: 5px;
+color:black;
+}
+#contactMessage:focus {
+background-color: #D79752;
+color:navy;
+border-color:silver;
+}
+#left-about
+{
+display:flex;
+justify-content: center; /* Center items horizontally */
+align-items: center; /* Center items vertically */
+}
+#right-about
+{
+  color:aliceblue;
+  background-color: rgba(37,37,94,0.9);
+  border-top:1px solid aliceblue;
+  padding-left:5%;
+  padding-right:5%;
+}
+#right-about p
+{
+  text-indent:50px;
+}
+@media (min-width: 768px)
+{
+    #homePicture {
+       background-position:0px -200px, 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        background-attachment:fixed;
+    }
+    #homeDetailsContainer
+    {
+        font-size:24px;
+    }
+    #homeDetailsContainer ul
+    {
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .nonmobile-img
+    {
+        display:inline-block;
+    }
+    .container-wrapper
+    {
+      display:flex;
+      justify-content:right;
+    }
+   .chart-container
+   {
+     background-color:transparent;
+     border-top:0px solid transparent;
+   }
+   .image-container
+   {
+    margin-left:50%;
+    transform: translateX(-50%);
+   }
+   .text-container pre
+{
+  padding-left:10%;
+  padding-right:10%;
+}
+ 
+}
+@media (min-width: 1024px)
+{
+    #homePicture {
+       background-position:0px -300px, 0px 0px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+        background-attachment:fixed;
+    }
+    #about-container {
+      display: flex; /* Use Flexbox to create equal height */
+      align-items: stretch; /* Align items at the top */
+    }
+    
+    #left-about {
+      flex-direction: row; /* Change the direction to column */
+      justify-content: right; /* Center items horizontally */
+      align-items: right; /* Center items vertically */
+      margin-top: 1px;
+      flex-basis: 35%; /* Use flex-basis to control the size of the left container */
+    }
+    
+    #left-about img {
+      align-self: flex-start; /* Move the image to the top */
+      height:100%;
+    }
+    
+    #right-about {
+      color:aliceblue;
+      padding-left:2%;
+      padding-right:2%;
+      flex-basis: 50%;
+     
+    } 
+    .image-container
+   {
+    margin-left:40%;
+   }
+   
+}
+@media (min-width: 1280px)
+{
+  #homePicture {
+    background-position:0px -400px, 0px 0px;
+     flex-direction:column;
+     
+ }
+  #homeText {
+
+    /* Add styles for the text and other elements within the hero section */
+    text-align: center;
+    
+    
+    color: gold;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    background-color: rgba(21, 66, 92, 0.8);
+    width:500px;
+    background-color: rgba(21, 66, 92, 0.8);
+    
+  }
+  #homeDetailsContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  #left-details, #right-details {
+    flex-basis: 48%;
+  }
+  .image-container
+   {
+    margin-left:30%;
+   }
+   .chart-container
+   {
+     margin-right:30%;
+   }
+   .text-container pre
+   {
+     
+     padding-left:15%;
+     padding-right:15%;
+   }
+  }
+   @media (min-width: 1520px)
+   {
+     #homePicture {
+       background-position:0px -650px, 0px 0px;  
+    }  
+}

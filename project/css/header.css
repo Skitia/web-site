@@ -1,0 +1,158 @@
+#mainNav {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px; 
+  list-style: none; 
+  color:navy;
+  background-color:#25255e;
+  border-bottom:2px ridge gold;
+  color:rgb(253, 215, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+.centerLogo {
+  flex-grow: 1;
+  text-align: center;
+  position:relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+}
+
+
+
+#logoLabel {
+  font-size: 24px; 
+  color:rgb(253, 215, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  text-decoration:underline;
+} 
+#logoLabel:hover
+{
+  color:silver;
+}
+
+#mainNav .desktopnav
+{
+  display:none;
+}
+#mobileNav
+{
+  width:0px;
+}
+.mobileOverlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.8);
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: gold;
+}
+.mobileOverlay-content {
+  font-family: 'Cinzel Decorative', cursive;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  display:block;
+}
+.mobileOverlay-content a {
+  display: block; 
+  white-space: nowrap;
+  margin-bottom:20px;
+  color:gold;
+}
+.mobileOverlay-content a:hover
+{
+  color:silver;
+  text-decoration:underline;
+}
+.mobileOverlay .overlayCloseBtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  text-decoration: none !important;
+  color:gold;
+}
+.mobileOverlay .overlayCloseBtn:hover {
+  color:silver;
+}
+    #mobileBar:hover{
+ color:gold;
+ cursor:pointer;
+ text-decoration:underline;
+  }
+
+#mainNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px; 
+  list-style: none; 
+  color:navy;
+  background-color:#25255e;
+
+  color:rgb(253, 215, 1);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  width:100%;
+} 
+
+#mobilebar
+{
+  text-align:right;
+  padding-right:5%;
+}/* Optionally, style the links for better visual appearance */
+#mainNav a {
+  text-decoration: none;
+  color: gold;
+  font-weight: bold; 
+}
+
+
+#mainNav a:hover {
+  color: silver;
+  text-decoration:underline;
+} 
+
+
+@media (min-width: 768px)
+{
+  #mainNav .desktopnav
+  {
+    display:inline-block;
+    margin:0px auto 0px auto;
+  }
+  #mainNav #mobilebar
+  {
+    display:none;
+  }
+  #mainNav li {
+    flex: 0 0 15%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .centerLogo {
+    flex-grow: 0;
+    text-align: left;
+    padding-right:3%;
+  }
+  #mainNav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    padding: 10px; 
+    list-style: none; 
+    font-size:16px;
+  }
+}
+

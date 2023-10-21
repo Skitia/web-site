@@ -1,0 +1,62 @@
+
+  footer{
+      
+    padding-top:30px;
+    padding-bottom:90px;
+    width:100%;
+    background-color:black;
+    text-align:center;
+     font-family: 'Cinzel Decorative', cursive;
+     text-align:center;
+    color:gold;
+    border-top:2px solid gold;
+  }
+  #footHead a{
+     
+   
+    margin-bottom: 5px;
+  
+        font-size: 46px;
+  }
+  
+ 
+    #footContent{
+    margin-top:5px;
+    text-align:center;
+ 
+
+   
+        font-size: 13px;
+  }
+ 
+
+#modFootHead{
+  text-align:Center;
+
+        font-family: 'Cinzel Decorative', cursive;
+      font-size:48px;
+       padding-top:20px; 
+  }
+  #modFootHead a
+  {
+    text-decoration:underline;
+  }
+  #modFootHead a:hover
+  {
+    color:silver;
+  }
+footer a{
+  color:gold;
+        text-decoration:none;
+}
+footer a:hover{
+  color:silver;
+}
+  #footContent a:hover,.modFoot a:hover{
+         text-decoration:underline;
+    color:silver;
+  }
+  .logoUnderline
+  {
+    text-decoration:underline;
+  }
